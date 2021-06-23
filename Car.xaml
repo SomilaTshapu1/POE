@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp1.Car"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Car" Height="753.325" Width="869.665">
+    <Grid Margin="0,0,-51,24.333" Background="#FF0084D0">
+        <Label Content="Date:" Foreground="Black" HorizontalAlignment="Left" Margin="18,59,0,0" VerticalAlignment="Top" Width="66" Background="{x:Null}"/>
+        <Label Content="Model and make:" Foreground="Black" HorizontalAlignment="Left" Margin="18,111,0,0" VerticalAlignment="Top" Background="{x:Null}"/>
+        <Label Content="Purchase price:" Foreground="Black" HorizontalAlignment="Left" Margin="17,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.398,0.489" Background="{x:Null}"/>
+        <Label Content="Total deposit:" Foreground="Black" HorizontalAlignment="Left" Margin="16,213,0,0" VerticalAlignment="Top" Background="{x:Null}"/>
+        <Label Content="Interest rate:" Foreground="Black" HorizontalAlignment="Left" Margin="16,261,0,0" VerticalAlignment="Top" Background="{x:Null}"/>
+        <Label Content="Insurance premium:" Foreground="Black" HorizontalAlignment="Left" Margin="16,306,0,0" VerticalAlignment="Top" Background="{x:Null}"/>
+        <TextBox x:Name="TxtPurchacePrice" HorizontalAlignment="Left" Height="23" Margin="194,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172"/>
+        <TextBox x:Name="txtCarModel" HorizontalAlignment="Left" Height="23" Margin="195,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172"/>
+        <TextBox x:Name="txtDepositCar" HorizontalAlignment="Left" Height="23" Margin="193,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" RenderTransformOrigin="0.353,0.876"/>
+        <TextBox x:Name="txtIntrestCar" HorizontalAlignment="Left" Height="23" Margin="193,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" RenderTransformOrigin="0.59,-0.33"/>
+        <TextBox x:Name="txtInsuranceCar" HorizontalAlignment="Left" Height="23" Margin="193,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" RenderTransformOrigin="0.467,2.234"/>
+        <Button x:Name="txtCalculateCar" Content="Calculate" HorizontalAlignment="Left" Margin="16,354,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="1.022,2.221" Height="34" Click="txtCalculateC_Click"/>
+        <DatePicker x:Name="dateTimePickerC" HorizontalAlignment="Left" Margin="194,53,0,0" VerticalAlignment="Top" Width="172"/>
+        <Label Content="Years:" Foreground="Black" HorizontalAlignment="Left" Margin="18,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.398,0.489" Background="{x:Null}"/>
+        <TextBox x:Name="txtYearsCar" HorizontalAlignment="Left" Height="23" Margin="195,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172"/>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="345" Margin="437,31,0,0" VerticalAlignment="Top" Width="337">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Right" Margin="0,0,838.667,648.667" Width="75" Height="20" VerticalAlignment="Bottom" Click="btnHome_Click_1"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="120,354,0,0" VerticalAlignment="Top" Width="75" Height="34" Click="btnClear_Click"/>
+
+    </Grid>
+</Window>
